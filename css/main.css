@@ -107,12 +107,15 @@ textarea {
     
 }
 #searchbox{
-    height: 41.6px;
-    width: 100%;
     margin-bottom: 41.6px;
 
 }
-
+#searchtextfield{
+    border-radius: 0;
+}
+#basic-addon2{
+    border-radius: 0;
+}
 #head{
     text-align: center;
 
