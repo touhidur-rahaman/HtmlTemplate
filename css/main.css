@@ -149,7 +149,15 @@ a.list-group-item{
 footer>p{
     color:white;
 }
-.articles{
+article#pad{
+    
+}
+section#articles{
+    margin-bottom: 5em;
+    margin-top: 5em;
+    box-shadow: 0px 0px 1px 1px grey;
+}
+.user-article{
     background-color: #eee;
 }
 .gray-scale-img{

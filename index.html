@@ -26,7 +26,7 @@
 
   
     <!-- Whole content kept in a container bootstrap class --> 
-    <div class="container">
+    <div class="container-fluid">
     <section>
         <div class="row">
             <!-- Navigation section is made out of col-md-3 class of bootstrap -->
@@ -77,12 +77,12 @@
                      
                     <!-- All articles goes here -->
                     <section id="articles">   
-                        <div class="row">
+                        <div class="row" >
                             <div class="col-md-4 " >
                                 <article>
                                     <img src="img/a.jpg" class="img-responsive gray-scale-img" alt="Akali"> 
                                     <!-- data-mh for matchHeight plugin -->
-                                    <div class="articles" data-mh="group2">
+                                    <div class="user-article" data-mh="group2">
                                         <h1>Tittle</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor ultricies tellus, a vestibulum tellus bibendum a. Suspendisse ut sapien vel magna placerat imperdiet. Nam eleifend elit tincidunt nulla volutpat, vitae maximus libero eleifend. Fusce libero velit, tincidunt non auctor ut, ultrices quis libero. Aenean ornare libero a cursus bibendum. In pellentesque ligula id dignissim auctor. Donec varius ac ex ac condimentum.</p>
                                     </div>    
@@ -93,7 +93,7 @@
                                 <article>
                                     <img src="img/b.jpg" class="img-responsive gray-scale-img" alt="Black Ops 3"> 
                                     <!-- data-mh for matchHeight plugin -->
-                                    <div class="articles" data-mh="group2">
+                                    <div class="user-article" data-mh="group2">
                                         <h1>Tittle</h1>
                                         <p>Vestibulum luctus eros eget tortor convallis finibus. In hac habitasse platea dictumst. Vestibulum condimentum vitae elit ac condimentum. Sed sit amet felis et ex luctus aliquam quis ac odio. Suspendisse eget ipsum ac risus faucibus feugiat at vel justo. Vestibulum iaculis massa eget ipsum auctor, quis finibus eros iaculis. Nam vehicula, turpis in luctus luctus, elit enim aliquet lacus, non aliquet tortor enim eget ligula. Aliquam ac quam eros. Sed congue justo felis, eget volutpat nunc scelerisque vel. Vestibulum ultrices sapien nec dui consectetur congue et non dui. Fusce vel nisl vitae felis convallis sagittis sit amet ac nibh. Vestibulum nisi enim, venenatis sed feugiat feugiat, faucibus ut lectus. Suspendisse rhoncus ex sed risus volutpat, vitae maximus dui malesuada. Quisque at condimentum nibh, a ultricies nisi.</p>
                                     </div>
@@ -104,27 +104,50 @@
                                 <article>
                                     <img src="img/c.jpg" class="img-responsive gray-scale-img" alt="battlefield 4"> 
                                     <!-- data-mh for matchHeight plugin -->
-                                    <div class="articles" data-mh="group2">
+                                    <div class="user-article" data-mh="group2">
                                         <h2>Tittle</h2>
                                         <p>Mauris ac gravida nisl. In tincidunt ullamcorper enim, id iaculis diam lobortis non. Quisque ullamcorper vitae sapien vitae semper. Sed tincidunt maximus ligula, posuere efficitur ante aliquet at. Aenean sed odio in felis pretium ullamcorper eu ac nisi. Nulla porttitor, justo sit amet porttitor suscipit, justo ligula viverra risus, quis mattis lorem enim elementum nulla. Donec eget risus ac dolor fermentum luctus et et augue. In dapibus sollicitudin odio, eget condimentum tellus porta ut. Ut mattis aliquam magna, nec tincidunt risus ultrices ac.</p>
-                                        <p> 
-
-                                        Fusce ut ornare libero. Vestibulum gravida urna vitae euismod fringilla. Praesent consectetur lacus ut tortor dignissim, sit amet fermentum nisi facilisis. Sed et vehicula nulla. Mauris vel purus metus. Phasellus sodales tortor turpis, vitae blandit lorem tincidunt quis. Vivamus quis facilisis ligula.</p>
-                                        <p>                                    Nunc dictum eget nisl sit amet tincidunt. Mauris lobortis sem sed pharetra euismod. Morbi bibendum urna a mauris maximus consectetur. Vestibulum non imperdiet erat. Praesent eget velit ac metus lacinia commodo vitae id est. Suspendisse potenti. Duis dignissim tincidunt massa nec scelerisque. Aenean nec porttitor augue. In scelerisque, augue a bibendum laoreet, diam enim pulvinar nunc, at aliquet est leo vel ex.</p>
-                                    </div>
+                                        <p>
                                 </article>
                             </div>
                         </div>
                     </section>
                     <!--all articles ends here -->
-                </section>
-            </div>
+                    <section>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-titel">Contact Form</h3>
+                            </div>
+                            <div class="panel-body">
+                                
+                                <form method="post" id="contactform" action="" role="form">
+                                    <div class="form-group">
+                                        <label for="contactname">Name</label>
+                                        <input type="text" class="form-control" id="contactname" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactemail1">Email address</label>
+                                        <input type="email" class="form-control" id="contactemail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactsubject">Subject</label>
+                                        <input type="text" class="form-control" id="contactsubject" placeholder="Subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactmessage">Message</label>
+                                        <textarea class="form-control" id="contactmessage" rows="6"></textarea>
+                                    </div>
+                                    <button type="button" id="contactbtn" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
         </div>
         
-        <!--Contact form-->
-        <section id="contactForm">
-            
-        </section>    
+           
         <!-- footer goes here -->
         <footer class="foot">
             <p>touhidur Rahaman</p>
